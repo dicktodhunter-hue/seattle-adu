@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Today's ADU Builders | Washington State ADU Lead Generation | Powered by Today's Marketing Strategies</title>
+<meta name="description" content="Today's ADU Builders connects Washington homeowners with the best local ADU builders. 15 exclusive territories across King and Pierce Counties. Builders — claim your territory before it's gone.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#1a2a3a;--navy-mid:#243547;--navy-light:#2d4a60;--gold:#b8902a;--gold-light:#d4a840;--cream:#f5f2ec;--linen:#ede8e0;--slate:#6b7a8a;--white:#ffffff}
+html{scroll-behavior:smooth}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--navy);overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(26,42,58,0.97);backdrop-filter:blur(8px);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;border-bottom:1px solid rgba(184,144,42,0.3)}
+.nav-brand{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--cream)}
+.nav-brand span{color:var(--gold-light)}
+.nav-cta{font-size:14px;font-weight:600;color:var(--navy);background:var(--gold-light);padding:8px 20px;border-radius:4px;text-decoration:none}
+
+/* HERO */
+.hero{min-height:100vh;background:linear-gradient(150deg,var(--navy) 0%,var(--navy-mid) 55%,var(--navy-light) 100%);display:flex;align-items:center;padding:100px 2rem 60px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 60% 40%,rgba(184,144,42,0.12) 0%,transparent 60%)}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:80px;background:linear-gradient(to bottom,transparent,var(--cream))}
+.hero-inner{max-width:960px;margin:0 auto;position:relative;z-index:1;text-align:center}
+.hero-eyebrow{display:inline-block;font-size:12px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-light);background:rgba(184,144,42,0.15);border:1px solid rgba(184,144,42,0.4);padding:6px 16px;border-radius:100px;margin-bottom:28px}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(36px,5.5vw,72px);font-weight:900;line-height:1.1;color:var(--cream);margin-bottom:24px}
+.hero h1 em{color:var(--gold-light);font-style:normal}
+.hero-sub{font-size:clamp(16px,2vw,20px);color:rgba(245,242,236,0.75);line-height:1.75;max-width:680px;margin:0 auto 40px}
+.hero-stats{display:flex;gap:32px;flex-wrap:wrap;margin-bottom:44px;justify-content:center}
+.hero-stat{border-left:3px solid var(--gold);padding-left:16px;text-align:left}
+.hero-stat .num{font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:var(--gold-light);display:block}
+.hero-stat .lbl{font-size:13px;color:rgba(245,242,236,0.6)}
+.hero-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--white);padding:16px 36px;border-radius:4px;font-size:16px;font-weight:700;text-decoration:none;transition:background 0.2s,transform 0.2s}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-2px)}
+.btn-secondary{display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--cream);padding:16px 36px;border-radius:4px;font-size:16px;font-weight:600;text-decoration:none;border:1px solid rgba(245,242,236,0.3);transition:border-color 0.2s}
+.btn-secondary:hover{border-color:var(--gold-light);color:var(--gold-light)}
+
+/* TERRITORIES */
+.territories-section{padding:80px 2rem;background:var(--cream)}
+.section-inner{max-width:1100px;margin:0 auto}
+.section-label{font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;text-align:center}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,46px);font-weight:700;color:var(--navy);margin-bottom:12px;line-height:1.15;text-align:center}
+.section-sub{font-size:17px;color:var(--slate);text-align:center;margin-bottom:48px;max-width:600px;margin-left:auto;margin-right:auto}
+
+.tier-label{font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--slate);margin:32px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--linen)}
+.territory-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-bottom:8px}
+.territory-card{background:var(--white);border:1px solid var(--linen);border-radius:12px;padding:20px 24px;position:relative;overflow:hidden;cursor:pointer;transition:transform 0.15s,box-shadow 0.15s;text-decoration:none;display:block}
+.territory-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-light))}
+.territory-card:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(26,42,58,0.12)}
+.card-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px}
+.card-city{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy)}
+.card-price{font-size:13px;font-weight:700;color:var(--gold);background:rgba(184,144,42,0.1);padding:4px 10px;border-radius:100px}
+.card-neighborhoods{font-size:12px;color:var(--slate);margin-bottom:14px}
+.card-metrics{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.metric{font-size:11px}
+.metric-label{color:var(--slate);display:block}
+.metric-value{font-weight:600;color:var(--navy);font-size:13px}
+.available-badge{position:absolute;top:16px;right:16px;background:var(--gold);color:var(--white);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 8px;border-radius:100px}
+
+/* FOR BUILDERS */
+.builders-section{background:var(--navy);padding:80px 2rem}
+.builders-inner{max-width:900px;margin:0 auto}
+.builders-section .section-title{color:var(--cream);text-align:center;margin-bottom:12px}
+.builders-section .section-label{text-align:center;color:var(--gold-light)}
+.builders-section .section-sub{color:rgba(245,242,236,0.65);text-align:center;margin-bottom:48px;font-size:17px;max-width:600px;margin-left:auto;margin-right:auto}
+.value-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-bottom:48px}
+.value-card{background:rgba(255,255,255,0.06);border:1px solid rgba(184,144,42,0.2);border-radius:12px;padding:28px}
+.value-icon{font-size:32px;margin-bottom:12px}
+.value-title{font-family:'Playfair Display',serif;font-size:18px;color:var(--cream);margin-bottom:8px}
+.value-desc{font-size:14px;color:rgba(245,242,236,0.65);line-height:1.6}
+.scarcity-box{background:rgba(184,144,42,0.12);border:1px solid rgba(184,144,42,0.4);border-radius:12px;padding:32px;text-align:center;margin-bottom:40px}
+.scarcity-box h3{font-family:'Playfair Display',serif;font-size:24px;color:var(--gold-light);margin-bottom:12px}
+.scarcity-box p{font-size:16px;color:rgba(245,242,236,0.75);line-height:1.7}
+
+/* CONTACT */
+.contact-section{background:var(--linen);padding:80px 2rem}
+.contact-inner{max-width:680px;margin:0 auto;text-align:center}
+.contact-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);font-weight:700;color:var(--navy);margin-bottom:16px}
+.contact-body{font-size:17px;color:var(--slate);margin-bottom:40px;line-height:1.8}
+.contact-box{background:var(--white);border:1px solid var(--linen);border-radius:12px;padding:40px;box-shadow:0 4px 30px rgba(26,42,58,0.08)}
+.field{width:100%;padding:14px 18px;background:var(--cream);border:1px solid rgba(26,42,58,0.15);border-radius:6px;color:var(--navy);font-size:15px;font-family:'Source Sans 3',sans-serif;margin-bottom:16px;outline:none;transition:border-color 0.2s}
+.field:focus{border-color:var(--gold)}
+.field::placeholder{color:var(--slate)}
+select.field{cursor:pointer}
+.submit{width:100%;padding:16px;background:var(--gold);color:var(--white);border:none;border-radius:6px;font-size:16px;font-weight:700;font-family:'Source Sans 3',sans-serif;cursor:pointer;transition:background 0.2s}
+.submit:hover{background:var(--gold-light)}
+.after-submit{margin-top:20px;padding:16px;background:rgba(184,144,42,0.08);border:1px solid rgba(184,144,42,0.3);border-radius:6px;font-size:14px;color:var(--navy);line-height:1.6;display:none}
+
+footer{background:#0f1a24;padding:32px 2rem;text-align:center;font-size:13px;color:rgba(245,242,236,0.35);line-height:1.8}
+footer a{color:rgba(245,242,236,0.45);text-decoration:none}
+.tms-brand{color:var(--gold-light);font-weight:600}
+
+@media(max-width:600px){.hero-buttons{flex-direction:column;align-items:center}.hero-stats{gap:20px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">Today's <span>ADU Builders</span></div>
+  <a class="nav-cta" href="#builders">Builders — Claim Your Territory</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Washington State's Premier ADU Lead Generation Network</div>
+    <h1>The Smartest ADU Builders<br>in Washington Are<br><em>Already Claiming Territories</em></h1>
+    <p class="hero-sub">Today's ADU Builders connects motivated Washington homeowners with the best local ADU builders — through a network of 15 exclusive, ranked lead-generation websites covering King and Pierce Counties.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="num">15</span><span class="lbl">Exclusive Territories</span></div>
+      <div class="hero-stat"><span class="num">1</span><span class="lbl">Builder Per Territory</span></div>
+      <div class="hero-stat"><span class="num">$154k+</span><span class="lbl">Network Annual Value</span></div>
+    </div>
+    <div class="hero-buttons">
+      <a class="btn-primary" href="#builders">I'm a Builder — Show Me Territories →</a>
+      <a class="btn-secondary" href="#homeowners">I'm a Homeowner — Find My Builder</a>
+    </div>
+  </div>
+</section>
+
+<!-- TERRITORIES -->
+<section class="territories-section" id="homeowners">
+  <div class="section-inner">
+    <p class="section-label">15 Exclusive Territories</p>
+    <h2 class="section-title">Find Your Local ADU Builder</h2>
+    <p class="section-sub">Click your city to visit your local Today's ADU Builders site and connect with your territory's exclusive builder.</p>
+
+    <div class="tier-label">Tier 1 — Premium Eastside · $1,497/month</div>
+    <div class="territory-grid">
+      <a class="territory-card" href="https://bellevue.aducustombuilder.com">
+        <div class="available-badge">Available</div>
+        <div class="card-top"><div class="card-city">Bellevue</div><div class="card-price">$1,497/mo</div></div>
+        <div class="card-neighborhoods">Medina · Clyde Hill · Mercer Island · Newcastle</div>
+        <div class="card-metrics">
+          <div class="metric"><span class="metric-label">Home value</span><span class="metric-value">$1.4M+</span></div>
+          <div class="metric"><span class="metric-label">ADU rent</span><span class="metric-value">$3,800/mo</span></div>
+          <div class="metric"><span class="metric-label">Key employers</span><span class="metric-value">MSFT, AMZN</span></div>
+        </div>
+      </a>
+      <a class="territory-card" href="https://redmond.aducustombuilder.com">
+        <div class="available-badge">Available</div>
+        <div class="card-top"><div class="card-city">Redmond</div><div class="card-price">$1,497/mo</div></div>
+        <div class="card-neighborhoods">Education Hill · Overlake · Bear Creek</div>
+        <div class="card-metrics">
+          <div class="metric"><span class="metric-label">Home value</span><span class="metric-value">$1.2M+</span></div>
+          <div class="metric"><span class="metric-label">ADU rent</span><span class="metric-value">$3,400/mo</span></div>
+          <div class="metric"><span class="metric-label">Key employers</span><span class="metric-value">MSFT HQ</span></div>
+        </div>
+      </a>
+      <a class="territory-card" href="https://kirkland.aducustombuilder.com">
+        <div class="available-badge">Available</div>
+        <div class="card-top"><div class="card-city">Kirkland</div><div class="card-price">$1,497/mo</div></div>
+        <div class="card-neighborhoods">Juanita · Bridle Trails · Totem Lake · Houghton</div>
+        <div class="card-metrics">
+          <div class="metric"><span class="metric-label">Home value</span><span class="metric-value">$1.1M+</span></div>
+          <div class="metric"><span class="metric-label">ADU rent</span><span class="metric-value">$3,200/mo</span></div>
+          <div class="metric"><span class="metric-label">Key employers</span><span class="metric-value">MSFT, Google</span></div>
+        </div>
+      </a>
+      <a class="territory-card" href="https://issaquah.aducustombuilder.com">
+        <div class="available-badge">Available</div>
+        <div class="card-top"><div class="card-city">Issaquah</div><div class="card-price">$1,497/mo</div></div>
+        <div class="card-neighborhoods">Issaquah Highlands · Sammamish Plateau</div>
+        <div class="card-metrics">
+          <div class="metric"><span class="metric-label">Home value</span><span class="metric-value">$1.1M+</span></div>
+          <div class="metric"><span class="metric-label">ADU rent</span><span class="metric-value">$3,200/mo</span></div>
+          <div class="metric"><span class="metric-label">Key employers</span><span class="metric-value">Costco HQ</span></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="tier-label">Tier 2 — Strong Metro · $997/month</div>
+    <div class="territory-grid">
+      <a class="territory-card" href="https://northseattle.aducustombuilder.com">
+        <div class="available-badge">Available</div>
+        <div class="card-top"><div class="card-city">North Seattle</div><div class="card-price">$997/mo</div></div>
+        <div class="card-neighborhoods">Ballard · Fremont · Green Lake · Wallingford · U-District</div>
+        <div class="card-metrics">
+          <div class="metric"><span class="metric-label">Home value</span><span class="metric-value">$900k+</span></div>
+          <div class="metric"><span class="metric-label">ADU rent</span><span class="metric-value">$3,200/mo</span></div>
+          <div class="metric"><span class="metric-label">Key employers</span><span class="metric-value">UW, Google</span></div>
+        </div>
+      </a>
+      <a class="territory-card" href="https://southseattle.aducustombuilder.com">
+        <div class="available-badge">Available</div>
+        <div class="card-top"><div class="card-city">South Seattle</div><div class="card-price">$997/mo</div></div>
+        <div class="card-neighborhoods">West Seattle · Beacon Hill · Columbia City · Georgetown</div>
+        <div class="card-metrics">
+          <div class="metric"><span class="metric-label">Home value</span><span class="metric-value">$850k+</span></div>
+          <div class="metric"><span class="metric-label">ADU rent</span><span class="metric-value">$3,500/mo</span></div>
+          <div class="metric"><span class="metric-label">Key employers</span><span class="metric-value">AMZN, Boeing</span></div>
+        </div>
+      </a>
+      <a class="territory-card" href="https://shoreline.aducustombuilder.com">
+        <div class="available-badge">Available</div>
+        <div class="card-top"><div class="card-city">Shoreline</div><div class="card-price">$997/mo</div></div>
+        <div class="card-neighborhoods">Richmond Beach · Innis Arden · Echo Lake</div>
+        <div class="card-metrics">
+          <div class="metric"><span class="metric-label">Home value</span><span class="metric-value">$750k+</span></div>
+          <div class="metric"><span class="metric-label">ADU rent</span><span class="metric-value">$2,800/mo</span></div>
+          <div class="metric"><span class="metric-label">Key employers</span><span class="metric-value">UW, Seattle</span></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="tier-label">Tier 3 — South Corridor · $697/month</div>
+    <div class="territory-grid">
+      <a class="territory-card" href="https://renton.aducustombuilder.com">
+        <div class="available-badge">Available</div>
+        <div class="card-top"><div class="card-city">Renton</div><div class="card-price">$697/mo</div></div>
+        <div class="card-neighborhoods">Kennydale · Highlands · Cascade · Benson Hill</div>
+        <div class="card-metrics">
+          <div class="metric"><span class="metric-label">Home value</span><span class="metric-value">$750k+</span></div>
+          <div class="metric"><span class="metric-label">ADU rent</span><span class="metric-value">$2,800/mo</span></div>
+          <div class="metric"><span class="metric-label">Key employers</span><span class="metric-value">Boeing, AMZN</span></div>
+        </div>
+      </a>
+      <a class="territory-card" href="https://kent.aducustombuilder.com">
+        <div class="available-badge">Available</div>
+        <div class="card-top"><div class="card-city">Kent</div><div class="card-price">$697/mo</div></div>
+        <div class="card-neighborhoods">Covington · Meridian · East Hill · Scenic Hill</div>
+        <div class="card-metrics">
+          <div class="metric"><span class="metric-label">Home value</span><span class="metric-value">$650k+</span></div>
+          <div class="metric"><span class="metric-label">ADU rent</span><span class="metric-value">$2,600/mo</span></div>
+          <div class="metric"><span class="metric-label">Key employers</span><span class="metric-value">Boeing, AMZN</span></div>
+        </div>
+      </a>
+      <a class="territory-card" href="https://auburn.aducustombuilder.com">
+        <div class="available-badge">Available</div>
+        <div class="card-top"><div class="card-city">Auburn</div><div class="card-price">$697/mo</div></div>
+        <div class="card-neighborhoods">Lea Hill · Lakeland · West Hill</div>
+        <div class="card-metrics">
+          <div class="metric"><span class="metric-label">Home value</span><span class="metric-value">$580k+</span></div>
+          <div class="metric"><span class="metric-label">ADU rent</span><span class="metric-value">$2,400/mo</span></div>
+          <div class="metric"><span class="metric-label">Key employers</span><span class="metric-value">Boeing, AMZN</span></div>
+        </div>
+      </a>
+      <a class="territory-card" href="https://federalway.aducustombuilder.com">
+        <div class="available-badge">Available</div>
+        <div class="card-top"><div class="card-city">Federal Way</div><div class="card-price">$697/mo</div></div>
+        <div class="card-neighborhoods">Des Moines · SeaTac corridor</div>
+        <div class="card-metrics">
+          <div class="metric"><span class="metric-label">Home value</span><span class="metric-value">$620k+</span></div>
+          <div class="metric"><span class="metric-label">ADU rent</span><span class="metric-value">$2,400/mo</span></div>
+          <div class="metric"><span class="metric-label">Key employers</span><span class="metric-value">Boeing, SeaTac</span></div>
+        </div>
+      </a>
+      <a class="territory-card" href="https://tacoma.aducustombuilder.com">
+        <div class="available-badge">Available</div>
+        <div class="card-top"><div class="card-city">Tacoma</div><div class="card-price">$697/mo</div></div>
+        <div class="card-neighborhoods">North End · Proctor · Ruston · South End</div>
+        <div class="card-metrics">
+          <div class="metric"><span class="metric-label">Home value</span><span class="metric-value">$520k+</span></div>
+          <div class="metric"><span class="metric-label">ADU rent</span><span class="metric-value">$2,200/mo</span></div>
+          <div class="metric"><span class="metric-label">Key employers</span><span class="metric-value">JBLM, UW</span></div>
+        </div>
+      </a>
+      <a class="territory-card" href="https://tukwila.aducustombuilder.com">
+        <div class="available-badge">Available</div>
+        <div class="card-top"><div class="card-city">Tukwila</div><div class="card-price">$697/mo</div></div>
+        <div class="card-neighborhoods">Riverton · Foster · Southcenter</div>
+        <div class="card-metrics">
+          <div class="metric"><span class="metric-label">Home value</span><span class="metric-value">$600k+</span></div>
+          <div class="metric"><span class="metric-label">ADU rent</span><span class="metric-value">$2,400/mo</span></div>
+          <div class="metric"><span class="metric-label">Key employers</span><span class="metric-value">SeaTac, AMZN</span></div>
+        </div>
+      </a>
+      <a class="territory-card" href="https://burien.aducustombuilder.com">
+        <div class="available-badge">Available</div>
+        <div class="card-top"><div class="card-city">Burien</div><div class="card-price">$697/mo</div></div>
+        <div class="card-neighborhoods">Three Tree Point · Gregory Heights · Seahurst</div>
+        <div class="card-metrics">
+          <div class="metric"><span class="metric-label">Home value</span><span class="metric-value">$620k+</span></div>
+          <div class="metric"><span class="metric-label">ADU rent</span><span class="metric-value">$2,400/mo</span></div>
+          <div class="metric"><span class="metric-label">Key employers</span><span class="metric-value">SeaTac, Port</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOR BUILDERS -->
+<section class="builders-section" id="builders">
+  <div class="builders-inner">
+    <p class="section-label">For ADU Builders</p>
+    <h2 class="section-title" style="color:var(--cream)">Claim Your Territory Before<br>Another Builder Does</h2>
+    <p class="section-sub">One builder per city. Exclusive leads. Monthly lease. First to sign locks the territory permanently.</p>
+
+    <div class="scarcity-box">
+      <h3>Only 15 Territories. Only 1 Builder Each. Forever.</h3>
+      <p>When a territory is leased, it's gone. The builder who signs first owns that city's leads exclusively — for as long as they stay. We never double-sell a territory. Ever.</p>
+    </div>
+
+    <div class="value-grid">
+      <div class="value-card">
+        <div class="value-icon">🎯</div>
+        <div class="value-title">Exclusive Leads</div>
+        <div class="value-desc">Every homeowner who finds your territory site calls your number. No shared leads. No competition from other builders in your city.</div>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">📈</div>
+        <div class="value-title">Ranked Sites</div>
+        <div class="value-desc">Each site is built to rank on Google for ADU searches in your city. Organic leads that keep coming — month after month.</div>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">📞</div>
+        <div class="value-title">Tracked Calls</div>
+        <div class="value-desc">Every call is logged through your dedicated Twilio number. You see exactly how many leads your territory generates each month.</div>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">🔒</div>
+        <div class="value-title">Your Territory. Locked.</div>
+        <div class="value-desc">Pay your monthly lease and the territory is yours. Stop paying and it goes to the next builder on the waitlist. Simple as that.</div>
+      </div>
+    </div>
+
+    <div style="text-align:center">
+      <a class="btn-primary" href="#claim">Claim My Territory Now →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / CLAIM -->
+<section class="contact-section" id="claim">
+  <div class="contact-inner">
+    <p class="section-label" style="text-align:center">Builders — Claim Your Territory</p>
+    <h2 class="contact-title">Which Territory Do You Want?</h2>
+    <p class="contact-body">Tell us your preferred city. We'll confirm availability and send you everything you need to get started within 24 hours.</p>
+    <div class="contact-box">
+      <input class="field" type="text" placeholder="Your Name">
+      <input class="field" type="text" placeholder="Your Company Name">
+      <input class="field" type="tel" placeholder="Best Phone Number">
+      <input class="field" type="email" placeholder="Email Address">
+      <select class="field">
+        <option value="">Select Your Preferred Territory</option>
+        <optgroup label="Tier 1 — $1,497/month">
+          <option>Bellevue</option>
+          <option>Redmond</option>
+          <option>Kirkland</option>
+          <option>Issaquah</option>
+        </optgroup>
+        <optgroup label="Tier 2 — $997/month">
+          <option>North Seattle</option>
+          <option>South Seattle</option>
+          <option>Shoreline</option>
+        </optgroup>
+        <optgroup label="Tier 3 — $697/month">
+          <option>Renton</option>
+          <option>Kent</option>
+          <option>Auburn</option>
+          <option>Federal Way</option>
+          <option>Tacoma</option>
+          <option>Tukwila</option>
+          <option>Burien</option>
+        </optgroup>
+      </select>
+      <button class="submit" onclick="this.textContent='✓ Request Received — We\'ll Call Within 24 Hours';this.style.background='#243547';document.querySelector('.after-submit').style.display='block'">Claim This Territory →</button>
+      <div class="after-submit">✅ Thank you! We'll confirm availability for your territory and call you within 24 hours to get you started.</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Today's ADU Builders · Washington State's Premier ADU Lead Generation Network</p>
+  <p style="margin-top:8px"><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a></p>
+  <p style="margin-top:8px">Powered by <span class="tms-brand">Today's Marketing Strategies LLC</span> · <a href="mailto:dick.todhunter@gmail.com">Contact Us</a></p>
+</footer>
+
+</body>
+</html>
